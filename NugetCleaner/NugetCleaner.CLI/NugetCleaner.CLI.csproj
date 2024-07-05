@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>nugetcleaner</AssemblyName>
+    <PackageId>$(MSBuildProjectName)</PackageId>
+    <Authors>Erik Putrycz</Authors>
+    <Company>Apption</Company>
+    <Product>$(MSBuildProjectName)</Product>
+    <RepositoryUrl>https://github.com/apption-oscode/nuget-cleaner</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/apption-oscode/nuget-cleaner</PackageProjectUrl>
+    <Description>Nuget Repository Cleaner. Sorts the versions and keeps a selected number of recent ones.</Description>
+    <PackAsTool>True</PackAsTool>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="NuGet.Protocol" Version="6.10.1" />
+  </ItemGroup>
+
+</Project>
