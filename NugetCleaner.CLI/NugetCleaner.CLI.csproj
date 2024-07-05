@@ -16,6 +16,10 @@
     <Description>Nuget Repository Cleaner. Sorts the versions and keeps a selected number of recent ones.</Description>
     <PackAsTool>True</PackAsTool>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Nuget Repository Cleaner</Title>
+    <Copyright>2024</Copyright>
+    <PackageTags>nuget, delete</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
